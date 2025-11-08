@@ -155,8 +155,7 @@ nav a {
 
 #Title-container {
     width: fit-content;
-    margin: 50% auto 0;
-    margin-top: 200px;
+    margin: 200px auto 0;
 }
 
 #Title-container h1 {
@@ -233,4 +232,81 @@ header div:hover {
 .card:hover {
     box-shadow: var(--maintheme) 0px 5px 15px;
     transform: scale(1.05);
+}
+
+/* ================================================================================================ */
+
+.revive-form {
+    background-color: var(--background);
+    border: 2px solid var(--border);
+    margin: 120px auto 0;
+    width: fit-content;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.revive-form input,
+.revive-form select {
+    background-color: transparent;
+    width: 400px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid var(--maintheme);
+    font-family: "Roboto";
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.revive-form select {
+    box-sizing: content-box;
+}
+
+.revive-form select > option {
+    background-color: var(--background);
+}
+
+.revive-form input[type="number"]::-webkit-outer-spin-button,
+.revive-form input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.revive-form input[type="number"] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.revive-form input[type="submit"] {
+    width: 60%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.revive-form h1 {
+    font-size: 30px;
+    color: #fff;
+    font-family: "Roboto";
+}
+
+.revive-form h1 span {
+    color: var(--maintheme);
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.revive-form input:hover,
+.revive-form input:focus,
+.revive-form select:focus,
+.revive-form select:hover {
+    transform: scale(1.05);
+    box-shadow: var(--maintheme) 0px 3px 10px;
+}
+
+.revive-form input[type="submit"]:hover{
+    text-shadow: 0 0 3px var(--maintheme);
+    color: var(--maintheme);
 }

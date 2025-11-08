@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles/reset.css" type="text/css" />
-        <link rel="stylesheet" href="styles/master.css" />
+        <link rel="stylesheet" href="styles/master.css" type="text/css" />
         <title>PC Revivers - revived</title>
     </head>
     <body>
@@ -27,8 +27,35 @@
             </nav>
         </header>
         <main>
-            <form action="post" method="valide.html">
-                
+            <form action="valide.html" method="post" class="revive-form">
+                <h1><span>Revive</span> Your Pc</h1>
+                <input
+                    type="email"
+                    id="mail"
+                    required
+                    placeholder="Your E-mail"
+                />
+                <input
+                    type="text"
+                    id="name"
+                    required
+                    placeholder="Your Full Name"
+                />
+                <input
+                    type="text"
+                    id="Code"
+                    required
+                    placeholder="Your Home Adress"
+                />
+                <select id="distos-selection" required>
+                    <option value="Bazzite">Bazzite</option>
+                    <option value="CachyOS">CachyOS</option>
+                    <option value="Mint">Mint</option>
+                    <option value="NixOS">NixOS</option>
+                    <option value="Ubuntu">Ubuntu</option>
+                    <option value="Fedora">Fedora</option>
+                </select>
+                <input type="submit" value="Request"/>
             </form>
         </main>
     </body>
