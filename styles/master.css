@@ -1,0 +1,236 @@
+/* roboto-100 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 100;
+    src: url("../resources/fonts/roboto-v47-latin-100.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-200 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 200;
+    src: url("../resources/fonts/roboto-v47-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../resources/fonts/roboto-v47-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../resources/fonts/roboto-v47-latin-regular.woff2")
+        format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../resources/fonts/roboto-v47-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-600 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../resources/fonts/roboto-v47-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-700 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../resources/fonts/roboto-v47-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-800 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../resources/fonts/roboto-v47-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-900 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    src: url("../resources/fonts/roboto-v47-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ================================================================================================ */
+html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+body {
+    background-image: url("../resources/Images/Background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+:root {
+    --background: #090b0c66;
+    --border: #14697a;
+    --paragraph: #94a39e;
+    --maintheme: #06b6d4;
+}
+
+header {
+    width: 100%;
+    height: 55px;
+    padding: 15px 50px;
+    top: 0px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    height: 55px;
+    border: 2px solid var(--border);
+    color: var(--maintheme);
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 999px;
+    transition-duration: 0.5s;
+    backdrop-filter: blur(2px);
+}
+
+nav {
+    background-color: var(--background);
+    height: 55px;
+    width: 760px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid var(--border);
+    border-radius: 9999px;
+    padding: 5px;
+    backdrop-filter: blur(2px);
+}
+nav #wiki {
+    height: 45px;
+    width: 191px;
+    border: 2px solid var(--maintheme);
+    text-align: center;
+    align-content: center;
+    border-radius: 9999px;
+}
+nav a {
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 20px;
+    transition-duration: 0.5s;
+}
+
+#Title-container {
+    width: fit-content;
+    margin: 50% auto 0;
+    margin-top: 200px;
+}
+
+#Title-container h1 {
+    text-align: center;
+    line-height: 1.2;
+    color: #fff;
+    font-size: 64px;
+    font-weight: 900;
+    font-family: "Roboto";
+}
+
+#Title-container h1 span {
+    color: var(--maintheme);
+    font-weight: bold;
+    font-size: 60px;
+}
+
+#Title-container p {
+    color: var(--paragraph);
+    font-weight: 600;
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 24px;
+}
+
+header nav a:hover {
+    color: var(--maintheme);
+    text-shadow: 0 0 3px var(--maintheme);
+    transform: scale(1.05);
+}
+
+header div:hover {
+    transform: scale(1.05);
+}
+
+.but {
+    color: var(--maintheme);
+    text-shadow: 0 0 3px var(--maintheme);
+    transform: scale(1.05);
+}
+
+/* ================================================================================================ */
+
+.Distos-Main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 25px;
+    padding: 20px;
+    margin-top: 100px;
+}
+
+.card {
+    color: var(--paragraph);
+    font-family: "Roboto";
+    font-size: 20px;
+    background-color: var(--background);
+    border: 2px solid var(--border);
+    border-radius: 24px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+
+.card img {
+    width: 100px;
+    flex-basis: 100px;
+}
+
+.card:hover {
+    box-shadow: var(--maintheme) 0px 5px 15px;
+    transform: scale(1.05);
+}
