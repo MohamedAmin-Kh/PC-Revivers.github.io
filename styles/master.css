@@ -243,6 +243,7 @@ header div:hover {
     width: fit-content;
     padding: 15px;
     display: flex;
+    border-radius: 35px;
     flex-direction: column;
     align-items: center;
 }
@@ -306,7 +307,125 @@ header div:hover {
     box-shadow: var(--maintheme) 0px 3px 10px;
 }
 
-.revive-form input[type="submit"]:hover{
+.revive-form input[type="submit"]:hover {
     text-shadow: 0 0 3px var(--maintheme);
     color: var(--maintheme);
 }
+
+/* ================================================================================================ */
+
+.contact {
+    padding: 20px;
+    margin-top: 100px;
+    font-family: "Roboto";
+}
+
+.contact .container {
+    display: flex;
+    margin: 35px;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .content {
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    color: var(--paragraph);
+    font-size: 24px;
+}
+
+.contact .content h1 {
+    color: var(--maintheme);
+}
+
+.contact .contactInfo {
+    background-color: var(--background);
+    border: 2px solid var(--border);
+    border-radius: 35px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.contact .contactInfo .box {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    color: #fff;
+    margin: 25px;
+    transition-duration: 0.5s;
+}
+
+.contact .contactInfo .box h3 {
+    color: var(--maintheme);
+}
+
+.contact .contactInfo .box .icon {
+    border: 2px solid var(--border);
+    border-radius: 99px;
+    padding: 10px;
+}
+
+.contact .contactform form {
+    background-color: var(--background);
+    border: 2px solid var(--border);
+    border-radius: 35px;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .contactform h2 {
+    color: var(--maintheme);
+    font-size: 40px;
+    transition-duration: 0.5s;
+}
+
+.contact .contactform input {
+    background-color: transparent;
+    width: 400px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid var(--maintheme);
+    font-family: "Roboto";
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+
+.contact input[type="submit"] {
+    width: 60%;
+    text-align: center;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+.contact .contactform textarea {
+    width: 400px;
+    background-color: var(--background);
+    border: 2px solid var(--maintheme);
+    border-radius: 10px;
+    color: #fff;
+    padding: 15px;
+    font-size: 20px;
+    transition-duration: 0.5s;
+}
+
+.contact .contactform textarea:hover,
+.contact .contactform input:hover {
+    transform: scale(1.05);
+    box-shadow: var(--maintheme) 0px 3px 10px;
+}
+
+.contact .contactInfo .box:hover,
+.contact .contactform h2:hover {
+    text-shadow: 0 0 3px var(--maintheme);
+    transform: scale(1.05);
+}
+
+/* ================================================================================================ */
